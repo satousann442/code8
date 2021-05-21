@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+body{
+  font-family:Noto+Sans+JP;
+}
+
+/* header */
+
+.h1{
+  font-weight: bold;
+}
+
+.header__row{
+  margin-top: 1%;
+  font-weight: bold;
+  margin-left: 2%;
+  margin-right: 5%;
+}
+
+/* mv */
+
+.mv{
+  background: url(../img/mv_img.png) no-repeat center;
+  background-size: cover;
+  height: auto;
+  max-height: 799px;
+}
+
+.mv .container{
+  text-align: center;
+}
+
+.mv h2{
+  color:#FFFFFF;
+  font-size: 53px;
+  padding-top: 15%;
+}
+
+.mv h3{
+  color:#FFFFFF;
+  font-size: 32px;
+  padding-top: 5%;
+}
+
+.mv h4{
+  color:#FFFFFF;
+  font-size: 29px;
+  padding-top: 5%;
+}
+
+.mv img{
+  width:15%;
+ padding-top: 10%;
+ padding-bottom: 10%;
+}
+
+/* about */
+
+.about .container{
+  text-align: center;
+}
+
+.about h2{
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.about h3{
+  padding-bottom: 5%;
+}
+
+.about p{
+  padding-bottom: 10%;
+}
+
+/* photo */
+
+.photo__content{
+  flex-basis:20%;
+}
+
+.photo__content img{
+  width:100%;
+}
+
+@media screen and (max-width:576px){
+  .photo__row{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* trainer */
+
+.trainer{
+  background:url(../img/trainer_bg.png) no-repeat center;
+  background-size: cover;
+  height: auto;
+  max-height: 992px;
+}
+
+.trainer h2{
+  color:#FFFFFF;
+  padding-top: 20%;
+  padding-left: 10%;
+}
+
+.trainer p{
+  color:#FFFFFF;
+  padding-top: 5%;
+  padding-left: 10%;
+  font-size: 29px;
+}
+
+/* owner */
+
+.owner{
+  background:url(../img/owner-bg.png) no-repeat top center;
+  background-size: cover;
+  height: auto;
+  max-height: 1388px;
+}
+
+.owner .container{
+  display: flex;
+}
+
+.owner .container img{
+  width: 50%;
+}
+
+.owner h2{
+  color:#FFFFFF;
+  padding-left: 10%;
+}
+
+.owner p{
+  color:#FFFFFF;
+  padding-top: 5%;
+  padding-left: 10%;
+  font-size: 29px;
+}
+
+@media screen and (max-width:576px){
+
+  .owner .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .owner .container img{
+    width: 100%;
+  }
+}
+
+/* user */
+
+.user{
+  background:url(../img/user_bg.png) no-repeat center;
+  background-size: cover;
+  height: auto;
+  max-height: 1008px;
+}
+
+.user .container{
+  text-align: center;
+}
+
+.user h2{
+  color:#FFFFFF;
+  padding-top: 30%;
+  padding-left: 10%;
+}
+
+.user p{
+  color:#FFFFFF;
+  padding-top: 5%;
+  padding-left: 10%;
+  font-size: 29px;
+}
+
+/* footer */
+
+.footer__row{
+  margin-top: 5%;
+  padding-bottom: 5%;
+  font-weight: bold;
+}
+
