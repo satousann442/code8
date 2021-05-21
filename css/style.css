@@ -48,7 +48,8 @@ body{
   padding-top: 5%;
 }
 
-.mv img{
+.mv__content{
+  margin:0 auto;
   width:15%;
  padding-top: 10%;
  padding-bottom: 10%;
@@ -121,12 +122,8 @@ body{
   max-height: 1388px;
 }
 
-.owner .container{
-  display: flex;
-}
-
-.owner .container img{
-  width: 50%;
+.owner__content__1 img{
+  width: 100%;
 }
 
 .owner h2{
