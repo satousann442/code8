@@ -1,14 +1,18 @@
 @charset "utf-8";
 
-body{
-  font-family:Noto+Sans+JP;
+a:hover {
+  opacity: 0.7;
+  transition: 0.5s;
 }
 
-  @media screen and (max-width:576px){
-    .burger-btn{
-    display: block;
-    }
-  }
+body{
+  font-family:'Noto Sans JP';
+}
+
+button{
+  background: none;
+  border:none;
+}
 
 /* header */
 
@@ -23,15 +27,20 @@ body{
   margin-right: 5%;
 }
 
+.header__content{
+  text-align: center;
+}
+
 /*ハンバーガーメニューCSS*/
 
-/* .menubtn{
+.menubtn{
   width:100%;
   max-width: 50px;
   position: fixed;
   z-index: 999;
 }
 .w1000{
+  display: none;
   max-width:1000px;
   margin: 0 auto;
   position: relative;
@@ -43,23 +52,25 @@ nav{
   position: absolute;
   height:100%;
   width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#FFFFFF
 }
 .content{
   padding-top: 80px
 }
 
-.menubtn{
-  width:100%;
-  max-width: 50px;
+@media screen and (max-width:768px){
+
+  .header__row{
+   display:none;
+  }
+
+  .w1000{
+  display: block;
+  }
 }
-.w1000{
-  max-width:1000px;
-  margin: 0 auto;
-}
-nav{
-  background-color:#ccc;
-  padding:20px 3%;
-} */
 
 /* mv */
 
@@ -122,10 +133,7 @@ nav{
 
 .photo__content{
   flex-basis:20%;
-}
-
-.photo__content img{
-  width:100%;
+  width: 100%;
 }
 
 @media screen and (max-width:576px){
@@ -166,10 +174,6 @@ nav{
   max-height: 1388px;
 }
 
-.owner__content__1 img{
-  width: 100%;
-}
-
 .owner h2{
   color:#FFFFFF;
   padding-left: 10%;
@@ -188,10 +192,6 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .owner .container img{
-    width: 100%;
   }
 }
 
